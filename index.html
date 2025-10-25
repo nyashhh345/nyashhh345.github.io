@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bark Bark!</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bark Bark!</title>
 
-    <!-- Google font: Allison -->
-    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+  <!-- Google Font: Allison -->
+  <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
 
-    <style>
-      body {
-        font-family: 'Allison', cursive;
-        text-align: center;
-        padding-top: 100px;
+  <style>
+    /* Make html and body fill the entire viewport */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
-       background-image: url("https://i.pinimg.com/736x/75/18/92/7518925d9fd33b469b6084609a785890.jpg");
-       background-size: cover;
-      background-position: center;
-     background-repeat: no-repeat;
-        
-      h1 
-        font-size: 100px;
-        color: black;
-      
-    </style>
-  </head>
-  <body>
-    <h1>meow..prrrrrr...!</h1>
+    body {
+      font-family: 'Allison', cursive;
+      text-align: center;
 
-  </body>
+      /* Background image settings */
+      background-image: url('https://i.pinimg.com/736x/75/18/92/7518925d9fd33b469b6084609a785890.jpg'); /* Replace with your own image */
+      background-size: cover;        /* Stretch to cover full background */
+      background-position: center;   /* Keep centered */
+      background-repeat: no-repeat;  /* Don’t tile */
+
+      /* Flexbox to center content both vertically and horizontally */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      /* Optional: smooth font and color for readability */
+      color: white;
+    }
+
+    h1 {
+      font-size: 100px;
+      margin: 0;
+      text-shadow: 2px 2px 6px #000; /* Makes text readable on any background */
+    }
+
+    p {
+      font-size: 24px;
+      margin-top: 20px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>meow..prrrrrr..!</h1>
+  <p>Welcome to my website 🐾</p>
+</body>
 </html>
