@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bark Bark!</title>
+  <title>Elegant Site</title>
 
-  <!-- Google Font: Allison -->
-  <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+  <!-- Google Font: Allura -->
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
   <style>
-    /* Make html and body fill the entire viewport */
     html, body {
       height: 100%;
       margin: 0;
@@ -17,59 +16,65 @@
     }
 
     body {
-      font-family: 'Allison', cursive;
-      text-align: center;
-
-      /* Background image settings */
-      background-image: url('https://i.pinimg.com/736x/75/18/92/7518925d9fd33b469b6084609a785890.jpg'); /* Replace with your own image */
-      background-size: cover;        /* Stretch to cover full background */
-      background-position: center;   /* Keep centered */
-      background-repeat: no-repeat;  /* Don’t tile */
-
-      /* Flexbox to center content both vertically and horizontally */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      /* Optional: smooth font and color for readability */
+      font-family: 'Allura', cursive;
+      background-image: url('https://i.pinimg.com/736x/4b/95/82/4b958255d9d51af684cb2cbfc4949d6c.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       color: white;
     }
 
+    /* Container to push content to the top */
+    .top-content {
+      padding-top: 50px; /* distance from top */
+      text-align: center;
+    }
+
     h1 {
-      font-size: 100px;
+      font-size: 120px; /* bigger text */
       margin: 0;
-      text-shadow: 2px 2px 6px #000; /* Makes text readable on any background */
+      text-shadow: none; /* remove shadow */
     }
 
-    p {
+    /* Elegant text box */
+    .textbox {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 20px 40px;
+      border: 3px solid rgba(255,255,255,0.7);
+      border-radius: 20px;
       font-size: 24px;
-      margin-top: 20px;
-      text-shadow: 1px 1px 3px #000;
+      background-color: rgba(0,0,0,0.3); /* semi-transparent background for readability */
     }
 
-    /* Responsive adjustments for smaller screens */
+    /* Responsive adjustments */
     @media (max-width: 768px) {
       h1 {
-        font-size: 60px;
+        font-size: 80px;
       }
-      p {
+      .textbox {
         font-size: 18px;
+        padding: 15px 30px;
       }
     }
 
     @media (max-width: 480px) {
       h1 {
-        font-size: 40px;
+        font-size: 50px;
       }
-      p {
+      .textbox {
         font-size: 16px;
+        padding: 10px 20px;
       }
     }
   </style>
 </head>
 <body>
-  <h1>meow..prrrrrr..!</h1>
-  <p>Welcome to my website 🐾</p>
+  <div class="top-content">
+    <h1>meow..prrrrrr..!</h1>
+    <div class="textbox">
+      Welcome to my elegant website 🐾
+    </div>
+  </div>
 </body>
 </html>
